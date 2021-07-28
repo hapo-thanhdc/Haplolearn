@@ -37,8 +37,10 @@ $(document).ready(function() {
     $(this).parents('.messenger-body').removeClass('active');
   })
 
-  $('#loginModal').modal('show');
+  $('#loginModal').click(function() {
+    this.modal('show');
     $(function() {
       $('[data-toggle="tooltip"]').tooltip()
     })
+  })
 })
