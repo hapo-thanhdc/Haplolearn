@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
 @media (max-width: 416px) {
   .header {
     background-color: #FFFBFB; } }
@@ -22,7 +23,11 @@
 .menu-item {
   margin: 0 10px; }
   .menu-item a {
-    font-weight: bold; }
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    color: #505353 !important; }
     .menu-item a.nav-link {
       padding: 7px 20px !important; }
     .menu-item a:hover {
@@ -311,6 +316,9 @@ ul {
 .un-position {
   position: static; }
 
+@media (max-width: 1920px) {
+  .reason-content {
+    float: right; } }
 @media (max-width: 1024px) {
   .why-hapolearn {
     top: 80px; }
@@ -460,7 +468,8 @@ ul {
     margin-bottom: 0; }
   .customer-wrapper .detail .name {
     color: #11114e;
-    font-size: 20px; }
+    font-size: 20px;
+    font-weight: bold; }
   .customer-wrapper .detail .position {
     font-size: 16px; }
   .customer-wrapper .rate i {

@@ -388,7 +388,11 @@ ul {
 .un-position {
   position: static;
 }
-
+@media (max-width: 1920px) {
+  .reason-content {
+    float: right;
+  }
+}
 @media (max-width: 1024px) {
   .why-hapolearn {
     top: 80px;

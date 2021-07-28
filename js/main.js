@@ -43,4 +43,10 @@ $(document).ready(function() {
       $('[data-toggle="tooltip"]').tooltip()
     })
   })
+
+  $('.menu-item').click(function() {
+    var menu = $(this).parent();
+    menu.find("li").removeClass('active');
+    $(this).addClass('active');
+  })
 })
