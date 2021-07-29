@@ -85,12 +85,21 @@
 @media (max-width: 768px) {
   .header {
     .container-fluid {
-      padding: 0;
+      padding: 0 !important;
     }
   }
 }
 
 .header {
-  padding-left: 129px;
-  padding-right: 129px;
+  .container-fluid {
+    padding-left: 129px;
+    padding-right: 129px;
+  }
+ 
+}
+
+.header {
+  .close {
+    display: none;
+  }
 }

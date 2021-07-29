@@ -50,3 +50,20 @@ $(document).ready(function() {
     $(this).addClass('active');
   })
 })
+
+function showheader() {
+  document.getElementById("hideheader").style.display = "block";
+  document.getElementById("hideheader").style.width = "5px";
+  document.getElementById("showheader").style.display = "none";
+  document.getElementById("navbarNav").style.display = "block";
+}
+function hideheader() {
+  document.getElementById("hideheader").style.display = "none";
+  document.getElementById("showheader").style.display = "block";
+  document.getElementById("navbarNav").style.display = "none";
+}
+function hidenav() {
+  document.getElementById("navbarNav").style.display = "none";
+  document.getElementById("hideheader").style.display = "none";
+  document.getElementById("showheader").style.display = "block";
+}

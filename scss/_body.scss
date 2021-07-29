@@ -350,6 +350,7 @@ ul {
     font-size: 25px;
     margin: 0 auto;
     width: 705px;
+    padding-bottom: 40px;
   }
 }
 
@@ -449,7 +450,7 @@ ul {
 }
 
 .reason-content {
-  padding-left: 103px;
+  padding-left: 40px;
   margin-top: 250px;
 
   ul {
@@ -484,6 +485,13 @@ ul {
     float: right;
   }
 }
+
+@media (max-width: 1440px) {
+  .reason-content {
+    float: unset;
+  }
+}
+
 @media (max-width: 768px) {
   .why-hapolearn {
     top: 80px;
@@ -493,8 +501,7 @@ ul {
       font-size: 50px;
       line-height: 61px;
       top: 8.81%;
-      left: 50%;
-      transform: translateX(-50%);
+      margin-right: 50px;
     }
 
     .image-laptop {
@@ -503,7 +510,7 @@ ul {
     }
 
     .reason-list {
-      transform: translateX(-325px);
+      transform: translateX(-114px);
       padding: 0 5px;
     }
 
@@ -615,7 +622,7 @@ ul {
     .heading {
       position: absolute;
       width: 226px;
-      right: 0;
+      right: -61px;
       top: 50px;
       font-size: 40px;
       line-height: 40px;
@@ -642,7 +649,7 @@ ul {
     ul {
       a {
         padding-left: 0;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 17px;
       }
     }
@@ -837,7 +844,7 @@ ul {
     line-height: 74px;
     padding-top: 124px;
     color: $background-white;
-    margin: 124px 368px;
+    margin: 124px 305px;
   }
 }
 
@@ -1027,7 +1034,6 @@ ul {
 
   .contact {
     display: flex;
-    margin-top: 15px;
     justify-content: center;
 
     .text-home {
@@ -1308,6 +1314,7 @@ ul {
 
 .form-group {
   padding: 0 30px;
+  margin-top: 30px;
 
   .form-group-title {
     font-weight: bold;
