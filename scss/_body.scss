@@ -81,12 +81,19 @@ ul {
       color: $btn-white;
       transition: all ease-in-out 0.4s;
       font-weight: bold;
+      font-size: 30px;
+      line-height: 37px;
 
       &:hover {
         color: $txt-bg-color;
       }
     }
   }
+}
+
+.background {
+  background: $baner-linear;
+  height: 161px;
 }
 
 @media (max-width: 416px) {
@@ -104,7 +111,14 @@ ul {
   }
 
   .banner-heading {
-    p {
+    .heading {
+      @media (max-width: 416px) {
+        font-size: 25px;
+        line-height: 31px;
+      }
+    }
+
+    .content {
       @media (max-width: 416px) {
         font-size: 25px;
         line-height: 31px;
@@ -127,6 +141,48 @@ ul {
     @media (max-width: 416px) {
       margin-top: 16px;
     }
+
+    p {
+      @media (max-width: 416px) {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 416px) {
+  .mobile-container {
+    transform: unset !important;
+  }
+
+  .background {
+    height: 0;
+  }
+
+  .list-course {
+    .container {
+      padding-left: 47px;
+      padding-right: 47px;
+    }
+    .course {
+      margin-top: 38px;
+    }
+  }
+  .list-course {
+    .item {
+      .image-wrapper {
+        height: 0;
+      }
+    }
+  }
+
+  .banner-content {
+    .banner-button {
+      button {
+        padding: 13px 67px !important;
+      }
+    }
   }
 }
 
@@ -146,8 +202,15 @@ ul {
   .banner-heading {
     .heading {
       @media (max-width: 768px) {
-        font-size: 25px;
-        line-height: 31px;
+        font-size: 30px;
+        line-height: 37px;
+      }
+    }
+
+    .content {
+      @media (max-width: 768px) {
+        font-size: 30px;
+        line-height: 37px;
       }
     }
 
@@ -171,7 +234,19 @@ ul {
   .mobile-container {
     padding: 0;
   }
+
+  .banner-content{
+    .banner-button {
+      button {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 7px 36px;
+      }
+    }
+  }
 }
+
+
 
 .bg-html {
   background-color: $bg-html;
@@ -298,6 +373,17 @@ ul {
   }
 }
 
+.course {
+  margin-top: -141px;
+}
+
+@media (max-width: 768px) {
+  .mobile-container {
+    transform: translateY(-105px);
+  }
+
+}
+
 @media (max-width: 468px) {
   .feature-course {
     margin-top: -101px;
@@ -368,6 +454,11 @@ ul {
 
   ul {
     padding-left: 50px;
+
+    a {
+      font-size: 16px;
+      line-height: 20px 
+    }
   }
 }
 
@@ -393,7 +484,7 @@ ul {
     float: right;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .why-hapolearn {
     top: 80px;
 
@@ -409,6 +500,20 @@ ul {
     .image-laptop {
       width: 277px;
       top: -150px;
+    }
+
+    .reason-list {
+      transform: translateX(-325px);
+      padding: 0 5px;
+    }
+
+    .image-laptop-tabet {
+      position: absolute;
+      transform: translate(37px, 132px);
+
+      img {
+        width: 378px;
+      }
     }
   }
 
@@ -474,7 +579,7 @@ ul {
   }
 
   .reason-list {
-    margin-top: 93px;
+    margin-top: 40px;
   }
 
   .reason-content {
@@ -519,6 +624,15 @@ ul {
     .col-mobile {
       position: unset;
     }
+
+    .image-laptop-tabet {
+      transform: unset;
+      position: unset;
+    }
+
+    .reason-list {
+      transform: unset;
+    }
   }
 
   .reason-content {
@@ -526,9 +640,11 @@ ul {
     margin-top: 120px;
 
     ul {
-      padding-left: 0;
-      font-size: 13px;
-      line-height: 17px;
+      a {
+        padding-left: 0;
+        font-size: 14px;
+        line-height: 17px;
+      }
     }
   }
 
@@ -940,6 +1056,7 @@ ul {
     padding-left: 80px;
     font-size: 16px;
     line-height: 24.52px;
+    font-weight: normal;
   }
 }
 
@@ -970,7 +1087,7 @@ ul {
       font-size: 14px;
       line-height: 17.17px;
       padding-left: 5px;
-      padding-right: 97px;
+      padding-right: 129px;
     }
 
     .logo-footer {
@@ -984,9 +1101,15 @@ ul {
     }
   }
 
+  .faq {
+    .contact {
+      margin-left: 123px;
+    }
+  }
+
   .footer-content {
     .contact {
-      transform: translate(66px, -134px);
+      transform: translate(10px, -134px);
     }
   }
 
@@ -1099,6 +1222,12 @@ ul {
   }
 }
 
+@media (max-width: 416px) {
+  .messenger-wrapper {
+    right: 85px;
+  }
+}
+
 .modal {
   .close-modal-button {
     width: 30px;
@@ -1168,6 +1297,7 @@ ul {
 }
 
 .nav-tabs {
+  border-bottom: 1px solid $bg-color;
   .nav-link {
     &.active {
       background-color: $bg-color;
@@ -1189,6 +1319,7 @@ ul {
     background-color: $form-control;
     box-sizing: border-box;
     border: 1px solid $border-control;
+    height: 60px;
   }
 }
 
@@ -1204,6 +1335,10 @@ ul {
     letter-spacing: -0.02em;
     text-decoration-line: underline;
     color: $bg-color;
+
+    &:hover {
+      color: $txt-bg-color;
+    }
   }
 
   .form-check-label {
@@ -1260,7 +1395,7 @@ ul {
   text-align: center;
 
   a {
-    padding: 13px 131px;
+    padding: 13px 165px;
     background: $backgroud-google;
     color: $background-white;
     font-size: 20px;
@@ -1276,7 +1411,7 @@ ul {
   padding-top: 15px;
 
   a {
-    padding: 12px 126px;
+    padding: 12px 160px;
     background: $backgroud-facebook;
     color: $background-white;
     font-size: 20px;

@@ -49,6 +49,9 @@
     color: #B2D235 !important;
     background-color: unset; } }
 
+@media (max-width: 768px) {
+  .header .container-fluid {
+    padding: 0; } }
 @font-face {
   font-family: "UTM";
   src: url(../fonts/UTM\ BryantLG.ttf); }
@@ -110,9 +113,15 @@ ul {
       padding: 13px 67px;
       color: #ffffff;
       transition: all ease-in-out 0.4s;
-      font-weight: bold; }
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 37px; }
       .banner-content .banner-button button:hover {
         color: #11114e; }
+
+.background {
+  background: linear-gradient(180deg, #FFFBFB 87.5%, #E7E9EE 100%);
+  height: 161px; }
 
 @media (max-width: 416px) {
   .mobile-container {
@@ -124,7 +133,11 @@ ul {
     transform: none;
     height: 350px; } }
 @media (max-width: 416px) {
-  .banner-content .banner-heading p {
+  .banner-content .banner-heading .heading {
+    font-size: 25px;
+    line-height: 31px; } }
+@media (max-width: 416px) {
+  .banner-content .banner-heading .content {
     font-size: 25px;
     line-height: 31px; } }
 @media (max-width: 416px) {
@@ -137,7 +150,29 @@ ul {
 @media (max-width: 416px) {
   .banner-content .banner-description {
     margin-top: 16px; } }
+@media (max-width: 416px) {
+  .banner-content .banner-description p {
+    font-size: 16px;
+    line-height: 20px; } }
 
+@media (max-width: 416px) {
+  .mobile-container {
+    transform: unset !important; }
+
+  .background {
+    height: 0; }
+
+  .list-course .container {
+    padding-left: 47px;
+    padding-right: 47px; }
+  .list-course .course {
+    margin-top: 38px; }
+
+  .list-course .item .image-wrapper {
+    height: 0; }
+
+  .banner-content .banner-button button {
+    padding: 13px 67px !important; } }
 @media (max-width: 768px) {
   .menu-navbar {
     background: #FFFBFB;
@@ -149,8 +184,12 @@ ul {
     left: 26px; } }
 @media (max-width: 768px) {
   .banner-content .banner-heading .heading {
-    font-size: 25px;
-    line-height: 31px; } }
+    font-size: 30px;
+    line-height: 37px; } }
+@media (max-width: 768px) {
+  .banner-content .banner-heading .content {
+    font-size: 30px;
+    line-height: 37px; } }
 .banner-content .banner-heading p {
   font-size: 16px;
   line-height: 20px;
@@ -164,7 +203,12 @@ ul {
 
 @media (max-width: 768px) {
   .mobile-container {
-    padding: 0; } }
+    padding: 0; }
+
+  .banner-content .banner-button button {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 7px 36px; } }
 .bg-html {
   background-color: #3f6185; }
 
@@ -255,6 +299,12 @@ ul {
     left: 875px;
     top: 2074px; }
 
+.course {
+  margin-top: -141px; }
+
+@media (max-width: 768px) {
+  .mobile-container {
+    transform: translateY(-105px); } }
 @media (max-width: 468px) {
   .feature-course {
     margin-top: -101px; }
@@ -302,6 +352,9 @@ ul {
   margin-top: 250px; }
   .reason-content ul {
     padding-left: 50px; }
+    .reason-content ul a {
+      font-size: 16px;
+      line-height: 20px; }
 
 .image-laptop {
   width: 478.32px; }
@@ -319,7 +372,7 @@ ul {
 @media (max-width: 1920px) {
   .reason-content {
     float: right; } }
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .why-hapolearn {
     top: 80px; }
     .why-hapolearn .heading {
@@ -332,6 +385,14 @@ ul {
     .why-hapolearn .image-laptop {
       width: 277px;
       top: -150px; }
+    .why-hapolearn .reason-list {
+      transform: translateX(-325px);
+      padding: 0 5px; }
+    .why-hapolearn .image-laptop-tabet {
+      position: absolute;
+      transform: translate(37px, 132px); }
+      .why-hapolearn .image-laptop-tabet img {
+        width: 378px; }
 
   .list-course .description {
     overflow: hidden;
@@ -373,7 +434,7 @@ ul {
     position: relative; }
 
   .reason-list {
-    margin-top: 93px; }
+    margin-top: 40px; }
 
   .reason-content {
     padding-left: 103px; }
@@ -402,13 +463,18 @@ ul {
     line-height: 40px; }
   .why-hapolearn .col-mobile {
     position: unset; }
+  .why-hapolearn .image-laptop-tabet {
+    transform: unset;
+    position: unset; }
+  .why-hapolearn .reason-list {
+    transform: unset; }
 
   .reason-content {
     padding-left: 0;
     margin-top: 120px; }
-    .reason-content ul {
+    .reason-content ul a {
       padding-left: 0;
-      font-size: 13px;
+      font-size: 14px;
       line-height: 17px; }
 
   .un-position {
@@ -682,7 +748,8 @@ ul {
     color: #FFFFFF;
     padding-left: 80px;
     font-size: 16px;
-    line-height: 24.52px; }
+    line-height: 24.52px;
+    font-weight: normal; }
 
 .footer-end {
   color: #FFFFFF;
@@ -703,15 +770,18 @@ ul {
       font-size: 14px;
       line-height: 17.17px;
       padding-left: 5px;
-      padding-right: 97px; }
+      padding-right: 129px; }
     .text-footer .logo-footer {
       width: 150px; }
 
   .contact-home .contact {
     position: absolute; }
 
+  .faq .contact {
+    margin-left: 123px; }
+
   .footer-content .contact {
-    transform: translate(66px, -134px); }
+    transform: translate(10px, -134px); }
 
   .social-link {
     transform: translate(105px, -111px); }
@@ -784,6 +854,9 @@ ul {
     .messenger-wrapper .messenger-close a {
       color: #000; }
 
+@media (max-width: 416px) {
+  .messenger-wrapper {
+    right: 85px; } }
 .modal .close-modal-button {
   width: 30px;
   height: 30px;
@@ -825,9 +898,11 @@ ul {
   background-color: #B2D235;
   color: #ffffff; }
 
-.nav-tabs .nav-link.active {
-  background-color: #B2D235;
-  color: #FFFFFF; }
+.nav-tabs {
+  border-bottom: 1px solid #B2D235; }
+  .nav-tabs .nav-link.active {
+    background-color: #B2D235;
+    color: #FFFFFF; }
 
 .form-group {
   padding: 0 30px; }
@@ -838,7 +913,8 @@ ul {
   .form-group .form-control {
     background-color: #F2F2F2;
     box-sizing: border-box;
-    border: 1px solid #E1E1E1; }
+    border: 1px solid #E1E1E1;
+    height: 60px; }
 
 .form-check {
   left: 20px; }
@@ -851,6 +927,8 @@ ul {
     letter-spacing: -0.02em;
     text-decoration-line: underline;
     color: #B2D235; }
+    .form-check a:hover {
+      color: #11114e; }
   .form-check .form-check-label {
     font-weight: bold;
     font-size: 18px;
@@ -891,7 +969,7 @@ ul {
   margin: 30px 30px;
   text-align: center; }
   .login-google a {
-    padding: 13px 131px;
+    padding: 13px 165px;
     background: #DC4E41;
     color: #FFFFFF;
     font-size: 20px;
@@ -904,7 +982,7 @@ ul {
   margin-bottom: 45px;
   padding-top: 15px; }
   .login-facebook a {
-    padding: 12px 126px;
+    padding: 12px 160px;
     background: #3B5999;
     color: #FFFFFF;
     font-size: 20px;
