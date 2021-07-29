@@ -52,6 +52,10 @@
 @media (max-width: 768px) {
   .header .container-fluid {
     padding: 0; } }
+.header {
+  padding-left: 129px;
+  padding-right: 129px; }
+
 @font-face {
   font-family: "UTM";
   src: url(../fonts/UTM\ BryantLG.ttf); }
