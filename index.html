@@ -14,40 +14,48 @@
 
 <body>
     <header id="header" class="header">
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-sm navbar-light navbar-style menu-navbar">
-                <button class="navbar-toggler button-navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon" onclick="showheader()" id="showheader"></span>
-                    <span class="my-1 mx-1 close fa fa-times" onclick="hideheader()" id="hideheader"></span>
-                </button>
-                <a class="navbar-brand align-items-end navbar-brand-img logo" href="#">
-                    <img src="./image/hapo_learn_logo.png" alt="">
-                </a>
-                <div class="collapse navbar-collapse justify-content-end header-navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav main-menu">
-                        <li class="nav-item menu-item">
-                            <a class="nav-link" href="#">HOME</a>
-                        </li>
-                        <li class="nav-item menu-item active">
-                            <a class="nav-link" href="#">ALL/COURSES</a>
-                        </li>
-                        <li class="nav-item menu-item">
-                            <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">LOGIN/REGISTER</a>
-                        </li>
-                        <li class="nav-item menu-item">
-                            <a class="nav-link" href="#">PROFILE</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+        <div class="container container-custom">
+            <div class="header-content">
+                <nav class="navbar navbar-expand-sm navbar-light navbar-style menu-navbar">
+                    <button class="navbar-toggler button-navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon" id="showheader"></span>
+                        <span class="my-1 mx-1 close fa fa-times"  id="hideheader"></span>
+                    </button>
+                    <a class="navbar-brand align-items-end navbar-brand-img logo" href="#">
+                        <img src="./image/hapo_learn_logo.png" alt="">
+                    </a>
+                    <div class="collapse navbar-collapse justify-content-end header-navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav main-menu">
+                            <li class="nav-item menu-item active">
+                                <a class="nav-link" href="#">HOME</a>
+                            </li>
+                            <li class="nav-item menu-item ">
+                                <a class="nav-link" href="#">ALL/COURSES</a>
+                            </li>
+                            <li class="nav-item menu-item-mobile ">
+                                <a class="nav-link" href="#">LIST LESSON</a>
+                            </li>
+                            <li class="nav-item menu-item-mobile ">
+                                <a class="nav-link" href="#">LESSONDETAIL</a>
+                            </li>
+                            <li class="nav-item menu-item">
+                                <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">LOGIN/REGISTER</a>
+                            </li>
+                            <li class="nav-item menu-item">
+                                <a class="nav-link" href="#">PROFILE</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
     </header>
 
-    <section>
+    <section class="section-banner">
         <div class="banner-wrapper">
             <img src="./image/hapo_learn_banner_logo.png" alt="">
             <div class="banner-content">
-                <div class ="container mobile-container">
+                <div class ="container container-custom mobile-container">
                     <div class="banner-heading">
                         <p class= heading>Learn Anytime, Anywhere</p>
                         <p class="fw-bold content">at HapoLearn <img src="./image/owl_logo.png" alt="banner" >!</p>
@@ -70,7 +78,7 @@
 
     <section>
         <div class="list-course feature-course ">
-            <div class="container">
+            <div class="container container-custom">
                 <div class="row course">
                     <div class="col-xl-4 col-lg-4 col-md-4">
                         <div class="item">
@@ -80,8 +88,10 @@
                                 </div>
                             </div>
                             <div class="content">
-                                <p class="heading">HTML/CSS/js Tutorial</p>
-                                <p class="description">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
+                                <div class="content-text">
+                                    <p class="heading">HTML/CSS/js Tutorial</p>
+                                    <p class="description">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
+                                </div>
                                 <a href="#" class="btn btn-default">Take This Course</a>
                             </div>
                         </div>
@@ -94,8 +104,10 @@
                                 </div>
                             </div>
                             <div class="content">
-                                <p class="heading">LARAVEL Tutorial</p>
-                                <p class="description">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
+                                <div class="content-text">
+                                    <p class="heading">LARAVEL Tutorial</p>
+                                    <p class="description">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
+                                </div>
                                 <a href="#" class="btn btn-default">Take This Course</a>
                             </div>
                         </div>
@@ -108,8 +120,10 @@
                                 </div>
                             </div>
                             <div class="content">
-                                <p class="heading">PHP Tutorial</p>
-                                <p class="description">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
+                                <div class="content-text">
+                                    <p class="heading">PHP Tutorial</p>
+                                    <p class="description">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
+                                </div>
                                 <a href="#" class="btn btn-default">Take This Course</a>
                             </div>
                         </div>
@@ -124,7 +138,7 @@
             <p class="fw-bold heading">Other Course</p>
         </div>
         <div class="list-course">
-            <div class="container">
+            <div class="container container-custom">
                 <div class="row">
                     <div class="col-xl-4 col-lg-4 col-md-4">
                         <div class="item">
@@ -134,8 +148,10 @@
                                 </div>
                             </div>
                             <div class="content">
-                                <p class="heading">CSS Tutorial</p>
-                                <p class="description">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
+                                <div class="content-text">
+                                    <p class="heading">CSS Tutorial</p>
+                                    <p class="description">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
+                                </div>
                                 <a href="#" class="btn btn-default">Take This Course</a>
                             </div>
                         </div>
@@ -148,8 +164,10 @@
                                 </div>
                             </div>
                             <div class="content">
-                                <p class="heading">Ruby on rails Tutorial</p>
-                                <p class="description">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
+                                <div class="content-text">
+                                    <p class="heading">Ruby on rails Tutorial</p>
+                                    <p class="description">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
+                                </div>
                                 <a href="#" class="btn btn-default">Take This Course</a>
                             </div>
                         </div>
@@ -162,15 +180,17 @@
                                 </div>
                             </div>
                             <div class="content">
-                                <p class="heading">Java Tutorial Tutorial</p>
-                                <p class="description">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
+                                <div class="content-text">
+                                    <p class="heading">Java Tutorial Tutorial</p>
+                                    <p class="description">I knew hardly anything about HTML, JS, and CSS before entering New Media,...</p>
+                                </div>
                                 <a href="#" class="btn btn-default">Take This Course</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="view-all-courses">
-                    <a href="#">View All Our Courses <img src="./image/view_all_courses.png" alt="view-courses-image"></a>
+                    <a class="all-course" href="#">View All Our Courses <img src="./image/view_all_courses.png" alt="view-courses-image"></a>
                 </div>
             </div>
         </div>
@@ -180,10 +200,10 @@
         <div class="image-laptop">
             <img src="./image/laptop.png" alt="laptop-background">   
         </div>
-        <div class="container-fluid">
+        <div class="container container-custom">
             <div class="why-hapolearn-wrapper">
                 <div class="row align-items-center">
-                    <div class="col-xl-6 col-lg-5 col-md-12 col-mobile">
+                    <div class="col-xl-6 col-lg-5 col-md-6 col-mobile">
                         <div class="reason-content">
                             <p class="heading">Why HapoLearn?</p>
                             <ul class="reason-list">
@@ -205,7 +225,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-7 col-md-12 un-position">
+                    <div class="col-xl-6 col-lg-7 col-md-6 un-position">
                         <div class="image-laptop-tabet">
                             <img src="./image/laptop_tabet.png" alt="laptop-tablent">
                         </div>
@@ -216,7 +236,7 @@
     </section>
 
     <section class="feedback">
-        <div class="container">
+        <div class="container container-custom">
             <div class="section-heading">
                 <p class="fw-bold heading">Feedback</p>
                 <p class="description">What other students turned professionals have to say about us after learning with us and reaching their goals</p>
@@ -310,7 +330,7 @@
     </section>
 
     <section class="community">
-        <div class="container-fluid">
+        <div class="container container-custom">
             <div class="content-community">
                 <p>Become a member of our growing community!</p>
             </div>
@@ -321,13 +341,13 @@
     </section>
 
     <section class="statistic">
-        <div class="container">
+        <div class="container container-custom">
             <div class="statistic-heading">
                 <p class="fw-bold heading">Statistic</p>
             </div>
             <div class="row content">
                 <div class="col-xl-4 col-md-4 ">
-                    <p>Course</p>
+                    <p>Courses</p>
                     <span class="counter">1,568</span>
                 </div>
                 <div class="col-xl-4 col-md-4">
@@ -344,7 +364,7 @@
 
     <footer class="footer">
         <div class="footer-content">
-            <div class="container">
+            <div class="container container-custom">
                 <div class="row row-footer">
                     <div class="col-lg-4 col-md-4 text-footer">
                         <img class="logo-footer" src="./image/hapo_learn_white1.png" alt="logo_hapolearn">
@@ -375,7 +395,7 @@
                                 <li>
                                     <div class="item">
                                         <div class="icon">
-                                            <i class="fab fa-facebook-f"></i>
+                                            <img class="facebook" src="./image/facebook.png" alt="facebook">
                                         </div>
                                         <div class="link">
                                             <a href="https://www.facebook.com/">https://www.facebook.com/</a>
@@ -385,7 +405,7 @@
                                 <li>
                                     <div class="item">
                                         <div class="icon">
-                                            <i class="fas fa-phone"></i>
+                                            <img class="contact-icon" src="./image/contact.png" alt="contact">
                                         </div>
                                         <div class="link">
                                             <a href="tel:+84-85-645-9898">+84-85-645-9898</a>
@@ -395,7 +415,7 @@
                                 <li>
                                     <div class="item">
                                         <div class="icon">
-                                            <i class="far fa-envelope"></i>
+                                            <img class="email" src="./image/email.png" alt="email">
                                         </div>
                                         <div class="link">
                                             <a href="mailto:info@haposoft.com">info@haposoft.com</a>
