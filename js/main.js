@@ -44,10 +44,13 @@ $(document).ready(function() {
     })
   })
 
-  $('.menu-item').click(function() {
+  $('.nav-item').click(function() {
     var menu = $(this).parent();
     menu.find("li").removeClass('active');
     $(this).addClass('active');
+    console.log('test');
+    $("#hideheader").hide();
+    $("#showheader").show();
   })
 
   $('#hideheader').click(function() {
@@ -76,4 +79,5 @@ $(document).ready(function() {
       $('#header').removeClass('active');
     }
   });
+
 })

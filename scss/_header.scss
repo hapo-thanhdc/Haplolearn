@@ -168,3 +168,30 @@
     outline: none;
   }
 }
+
+@media (min-width: 1200px) {
+  .header {
+    .container-custom {
+      max-width: 1800px;
+    }
+  }
+}
+
+@media (max-width: 1442px) {
+  .header {
+    .logo {
+      padding-left: 60px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    .container-custom {
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}

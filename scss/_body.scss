@@ -3,21 +3,6 @@
   src: url(../fonts/UTM\ BryantLG.ttf);
 }
 
-@media (min-width: 1360px) {
-  .container-custom {
-    max-width: 1440px;
-  }
-}
-
-@media (min-width: 768px) {
-  .statistic {
-    .container-custom {
-      max-width: 783px;
-    }
-  }
-}
-  
-
 img {
   width: 100%;
 }
@@ -51,7 +36,7 @@ ul {
   position: absolute;
   left: 60px;
   top: 50%;
-  transform: translateY(-72%);
+  transform: translateY(-50%);
 
   .banner-heading {
     .heading {
@@ -125,6 +110,7 @@ ul {
     position: static;
     transform: none;
     height: 300px;
+    padding-left: 0;
   }
 
   .banner-heading {
@@ -301,7 +287,7 @@ ul {
 }
 
 .content-text {
-  min-height: 117.2px;
+  min-height: 140px;
 }
 
 .list-course {
@@ -340,7 +326,7 @@ ul {
       background: $bg-color;
       box-shadow: $box-shadow;
       border-radius: 35px;
-      padding: 13px 67px;
+      padding: 13px 37px;
       color: $btn-white;
       margin-top: 24px;
       font-weight: bold;
@@ -352,6 +338,15 @@ ul {
   a {
     &:hover {
       color: $txt-bg-color;
+    }
+  }
+
+  .view-all-courses {
+    a {
+      &:hover {
+        color: unset;
+        transform: scale(1.5);
+      }
     }
   }
 }
@@ -396,10 +391,6 @@ ul {
     font-size: 40px;
     text-decoration: none;
     -webkit-text-stroke-width: 1px;
-
-    &:hover {
-      transform: scale(2);
-    }
   }
 
   img {
@@ -486,7 +477,6 @@ ul {
 }
 
 .reason-content {
-  padding-left: 40px;
   margin-top: 228px;
 
   ul {
@@ -505,12 +495,11 @@ ul {
 }
 
 .image-laptop-tabet {
-  position: absolute;
+  float: left;
   top: 100px;
-  right: 0;
 
   img {
-    width: 792px;
+    width: 650px;
   }
 }
 
@@ -842,9 +831,10 @@ ul {
 
 .community {
   background-image: url(../image/become-member.png);
-  text-align: center;
   margin-top: 110px;
-  position: relative;
+  background-repeat: no-repeat;
+  background-size: 100% 500px;
+  text-align: center;
 
   .banner-button {
     margin-top: 10px;
@@ -859,6 +849,7 @@ ul {
       font-weight: bold;
       font-size: 30px;
       line-height: 37px;
+      padding-bottom: 18px;
     }
   }
 
@@ -876,14 +867,15 @@ ul {
     line-height: 74px;
     padding-top: 124px;
     color: $background-white;
-    padding-left: 367px;
-    padding-right: 367px;
+    padding-left: 167px;
+    padding-right: 168px;
   }
 }
 
 @media (max-width: 768px) {
   .community {
     background-position: center;
+    background-size: 100% 270px;
 
     .banner-button {
       margin-top: 29px;
@@ -904,11 +896,16 @@ ul {
       padding-left: 148px;
       padding-right: 148px;
       margin-top: 52px;
+      padding-top: 38px;
     }
   }
 }
 
 @media (max-width: 416px) {
+  .community {
+    background-size: 100% 185px;
+  }
+
   .content-community {
     p {
       font-size: 23px;
@@ -936,7 +933,7 @@ ul {
 }
 
 .statistic {
-  position: relative;
+
   margin-top: 110px;
   text-align: center;
 
@@ -983,6 +980,15 @@ ul {
       border-radius: 30px;
     }
   }
+}
+
+@media (min-width: 1200px) {
+  .statistic {
+    .container-custom {
+      max-width: 1800px;
+    }
+  }
+    
 }
 
 @media (max-width: 768px) {
@@ -1089,6 +1095,11 @@ ul {
   background-color: $txt-color;
   padding: 65px 0;
 
+  .contact-home-mobile,
+  .faq-mobile {
+    display: none;
+  }
+
   .contact {
     display: flex;
     justify-content: center;
@@ -1116,9 +1127,13 @@ ul {
 .text-footer {
   position: relative;
 
+  .logo-footer {
+    width: 340px;
+  }
+
   .logo-text {
     color: $background-white;
-    padding-left: 103px;
+    padding-left: 77px;
     font-size: 20px;
     line-height: 25px;
     font-weight: normal;
@@ -1137,14 +1152,35 @@ ul {
   p {
     padding-top: 7px;
     padding-bottom: 13px;
+    margin-bottom: 0px;
   }
+}
+
+@media (min-width: 1200px) {
+  .footer-content{
+    .container-custom {
+      max-width: 1800px;
+    }
+  }
+}
+
+@media (max-width: 1442px) {
+ .text-footer {
+   padding-left: 60px;
+ }
 }
 
 @media (max-width: 768px) {
   .text-footer {
+    padding-left: 0;
+
+    .logo-footer {
+      width: 170px;
+    }
+
     .logo-text {
       padding-left: 7px;
-      font-size: 16px;
+      font-size: 15px;
       line-height: 20px;
     }
   }
@@ -1154,6 +1190,8 @@ ul {
     padding-bottom: 30px;
 
     .contact {
+      padding-top: 15px;
+
       a {
         font-size: 18px;
         line-height: 22px;
@@ -1171,39 +1209,60 @@ ul {
   
 }
 
-@media (max-width: 416px){
-  .row-footer {
-    transform: rotate(-180deg);
-    direction: ltr;
-  }
-
-  .text-footer,
-  .contact-home,
-  .faq,
-  .social {
-    transform: rotate(180deg);
-    direction: rtl;
-  }
-
+@media (max-width: 416px) {
   .footer-content {
+    padding-bottom: 1px;
+
+    .contact-home-mobile,
+    .faq-mobile {
+      display: unset;
+    }
+
+    .contact-home,
+    .faq {
+      display: none;
+    }
+
     .contact {
-      justify-content: flex-end;
+      justify-content: flex-start;
     }
 
-    .social {
-      margin-top: 0;
-      position: absolute;
+    .contact-home-mobile {
+      margin-left: 37px;
+    }
+
+    .faq-mobile {
+      margin-top: -182px;
+      margin-left: 200px;
     }
   }
 
-  .faq {
-    padding-left: 210px;
+  .text-footer {
+    padding-top: 50px;
+    padding-left: 31px;
+
+    .logo-text {
+      font-size: 14px;
+      line-height: 17px;
+    }
   }
 
-  .contact-home {
-    top: 160px;
+  .social-link {
+    justify-content: flex-end;
+    margin-top: -127px;
+
+    .item {
+      margin: 0;
+      padding-left: 11px;
+    }
+
+    .icon {
+      width: 30px;
+      height: 30px;
+    }
   }
 }
+
 .messenger-wrapper {
   position: fixed;
   bottom: 10px;
@@ -1299,12 +1358,6 @@ ul {
     a {
       color: $mess-close;
     }
-  }
-}
-
-@media (max-width: 416px) {
-  .messenger-wrapper {
-    right: 85px;
   }
 }
 

@@ -99,15 +99,21 @@
 .header button {
   outline: none; }
 
+@media (min-width: 1200px) {
+  .header .container-custom {
+    max-width: 1800px; } }
+@media (max-width: 1442px) {
+  .header .logo {
+    padding-left: 60px; } }
+@media (max-width: 768px) {
+  .header .container-custom {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0; } }
 @font-face {
   font-family: "UTM";
   src: url(../fonts/UTM\ BryantLG.ttf); }
-@media (min-width: 1360px) {
-  .container-custom {
-    max-width: 1440px; } }
-@media (min-width: 768px) {
-  .statistic .container-custom {
-    max-width: 783px; } }
 img {
   width: 100%; }
 
@@ -135,7 +141,7 @@ ul {
   position: absolute;
   left: 60px;
   top: 50%;
-  transform: translateY(-72%); }
+  transform: translateY(-50%); }
   .banner-content .banner-heading .heading {
     font-size: 50px;
     font-weight: normal;
@@ -186,7 +192,8 @@ ul {
   .banner-content {
     position: static;
     transform: none;
-    height: 300px; } }
+    height: 300px;
+    padding-left: 0; } }
 @media (max-width: 416px) {
   .banner-content .banner-heading img {
     width: 25px; } }
@@ -290,7 +297,7 @@ ul {
   background-color: #1b75bb; }
 
 .content-text {
-  min-height: 117.2px; }
+  min-height: 140px; }
 
 .list-course {
   margin: 40px 0; }
@@ -318,7 +325,7 @@ ul {
       background: #B2D235;
       box-shadow: rgba(0, 0, 0, 0.25);
       border-radius: 35px;
-      padding: 13px 67px;
+      padding: 13px 37px;
       color: #ffffff;
       margin-top: 24px;
       font-weight: bold;
@@ -326,6 +333,9 @@ ul {
       z-index: 9999; }
   .list-course a:hover {
     color: #11114e; }
+  .list-course .view-all-courses a:hover {
+    color: unset;
+    transform: scale(1.5); }
 
 .section-heading {
   text-align: center; }
@@ -359,8 +369,6 @@ ul {
     font-size: 40px;
     text-decoration: none;
     -webkit-text-stroke-width: 1px; }
-    .view-all-courses .all-course:hover {
-      transform: scale(2); }
   .view-all-courses img {
     width: 47.09px;
     height: 26.08px;
@@ -416,7 +424,6 @@ ul {
   padding: 98px 0; }
 
 .reason-content {
-  padding-left: 40px;
   margin-top: 228px; }
   .reason-content ul {
     padding-left: 50px; }
@@ -429,11 +436,10 @@ ul {
   width: 478.32px; }
 
 .image-laptop-tabet {
-  position: absolute;
-  top: 100px;
-  right: 0; }
+  float: left;
+  top: 100px; }
   .image-laptop-tabet img {
-    width: 792px; }
+    width: 650px; }
 
 .un-position {
   position: static; }
@@ -647,9 +653,10 @@ ul {
       padding-bottom: 10px; } }
 .community {
   background-image: url(../image/become-member.png);
-  text-align: center;
   margin-top: 110px;
-  position: relative; }
+  background-repeat: no-repeat;
+  background-size: 100% 500px;
+  text-align: center; }
   .community .banner-button {
     margin-top: 10px;
     padding-bottom: 134px; }
@@ -661,7 +668,8 @@ ul {
       color: #B2D235;
       font-weight: bold;
       font-size: 30px;
-      line-height: 37px; }
+      line-height: 37px;
+      padding-bottom: 18px; }
   .community button:hover {
     color: #11114e; }
 
@@ -671,12 +679,13 @@ ul {
   line-height: 74px;
   padding-top: 124px;
   color: #FFFFFF;
-  padding-left: 367px;
-  padding-right: 367px; }
+  padding-left: 167px;
+  padding-right: 168px; }
 
 @media (max-width: 768px) {
   .community {
-    background-position: center; }
+    background-position: center;
+    background-size: 100% 270px; }
     .community .banner-button {
       margin-top: 29px;
       padding-bottom: 62.25px; }
@@ -690,8 +699,12 @@ ul {
     line-height: 43px;
     padding-left: 148px;
     padding-right: 148px;
-    margin-top: 52px; } }
+    margin-top: 52px;
+    padding-top: 38px; } }
 @media (max-width: 416px) {
+  .community {
+    background-size: 100% 185px; }
+
   .content-community p {
     font-size: 23px;
     padding-left: 36px;
@@ -709,7 +722,6 @@ ul {
         padding: 7px 22px;
         padding-bottom: 10px; } }
 .statistic {
-  position: relative;
   margin-top: 110px;
   text-align: center; }
   .statistic .content {
@@ -747,6 +759,9 @@ ul {
       bottom: 0;
       border-radius: 30px; }
 
+@media (min-width: 1200px) {
+  .statistic .container-custom {
+    max-width: 1800px; } }
 @media (max-width: 768px) {
   .statistic {
     margin-top: 60.33px; }
@@ -811,6 +826,9 @@ ul {
 .footer-content {
   background-color: #505353;
   padding: 65px 0; }
+  .footer-content .contact-home-mobile,
+  .footer-content .faq-mobile {
+    display: none; }
   .footer-content .contact {
     display: flex;
     justify-content: center;
@@ -829,9 +847,11 @@ ul {
 
 .text-footer {
   position: relative; }
+  .text-footer .logo-footer {
+    width: 340px; }
   .text-footer .logo-text {
     color: #FFFFFF;
-    padding-left: 103px;
+    padding-left: 77px;
     font-size: 20px;
     line-height: 25px;
     font-weight: normal; }
@@ -846,46 +866,69 @@ ul {
   letter-spacing: -0.05em; }
   .footer-end p {
     padding-top: 7px;
-    padding-bottom: 13px; }
+    padding-bottom: 13px;
+    margin-bottom: 0px; }
 
+@media (min-width: 1200px) {
+  .footer-content .container-custom {
+    max-width: 1800px; } }
+@media (max-width: 1442px) {
+  .text-footer {
+    padding-left: 60px; } }
 @media (max-width: 768px) {
-  .text-footer .logo-text {
-    padding-left: 7px;
-    font-size: 16px;
-    line-height: 20px; }
+  .text-footer {
+    padding-left: 0; }
+    .text-footer .logo-footer {
+      width: 170px; }
+    .text-footer .logo-text {
+      padding-left: 7px;
+      font-size: 15px;
+      line-height: 20px; }
 
   .footer-content {
     padding-top: 17px;
     padding-bottom: 30px; }
-    .footer-content .contact a {
-      font-size: 18px;
-      line-height: 22px; }
+    .footer-content .contact {
+      padding-top: 15px; }
+      .footer-content .contact a {
+        font-size: 18px;
+        line-height: 22px; }
 
   .social-link .icon .contact-icon {
     width: 20px; } }
 @media (max-width: 416px) {
-  .row-footer {
-    transform: rotate(-180deg);
-    direction: ltr; }
+  .footer-content {
+    padding-bottom: 1px; }
+    .footer-content .contact-home-mobile,
+    .footer-content .faq-mobile {
+      display: unset; }
+    .footer-content .contact-home,
+    .footer-content .faq {
+      display: none; }
+    .footer-content .contact {
+      justify-content: flex-start; }
+    .footer-content .contact-home-mobile {
+      margin-left: 37px; }
+    .footer-content .faq-mobile {
+      margin-top: -182px;
+      margin-left: 200px; }
 
-  .text-footer,
-  .contact-home,
-  .faq,
-  .social {
-    transform: rotate(180deg);
-    direction: rtl; }
+  .text-footer {
+    padding-top: 50px;
+    padding-left: 31px; }
+    .text-footer .logo-text {
+      font-size: 14px;
+      line-height: 17px; }
 
-  .footer-content .contact {
-    justify-content: flex-end; }
-  .footer-content .social {
-    margin-top: 0;
-    position: absolute; }
-
-  .faq {
-    padding-left: 210px; }
-
-  .contact-home {
-    top: 160px; } }
+  .social-link {
+    justify-content: flex-end;
+    margin-top: -127px; }
+    .social-link .item {
+      margin: 0;
+      padding-left: 11px; }
+    .social-link .icon {
+      width: 30px;
+      height: 30px; } }
 .messenger-wrapper {
   position: fixed;
   bottom: 10px;
@@ -951,9 +994,6 @@ ul {
     .messenger-wrapper .messenger-close a {
       color: #000; }
 
-@media (max-width: 416px) {
-  .messenger-wrapper {
-    right: 85px; } }
 .modal .close-modal-button {
   width: 30px;
   height: 30px;
