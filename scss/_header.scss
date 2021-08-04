@@ -192,6 +192,15 @@
       padding-right: 0;
       margin-left: 0;
       margin-right: 0;
+
     }
   }
+}
+
+@media (width:768px) {
+    .header {
+        .container-custom {
+            max-width: 775px;
+        }
+    }
 }
